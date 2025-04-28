@@ -175,11 +175,11 @@
         Symbols {
             display-name = "Kp";
             bindings = <
-&trans     &kp N1           &kp N2          &kp N3    &kp N4      &kp N5        &trans                                                                     &trans  &kp N6     &kp N7         &kp N8                &kp N9                 &kp N0            &trans
-&kp TAB    &kp MINUS        &kp UNDERSCORE  &kp PLUS  &kp EQUAL   &kp QUESTION  &trans                                                                     &trans  &kp CARET  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK      &kp BSLH
-&kp ESC    &kp A            &kp S           &kp D     &kp F       &kp G         &trans           &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL               &trans  &kp H      &kp J          &kp K                 &kp L                  &kp SEMICOLON     &kp SQT
-&kp LSHFT  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp HOME    &kp PG_UP                                  &kp GRAVE  &kp SQT        &kp RIGHT_BRACKET     &kp BACKSLASH          &kp LEFT_BRACKET  &kp RSHFT
-&trans     &kp GRAVE        &kp CAPS        &kp LEFT  &kp RIGHT                         &kp TAB  &kp DEL    &kp END     &kp PG_DN  &kp ESCAPE  &kp ESCAPE                     &kp LEFT       &kp DOWN              &kp UP_ARROW           &kp RIGHT         &trans
+&trans     &kp N1           &kp N2          &kp N3    &kp N4      &kp N5         &trans                                                                     &trans  &kp N6     &kp N7         &kp N8                &kp N9                 &kp N0            &trans
+&kp TAB    &kp MINUS        &kp UNDERSCORE  &kp PLUS  &kp EQUAL   &kp LS(SLASH)  &trans                                                                     &trans  &kp CARET  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK      &kp SLASH
+&kp ESC    &kp A            &kp S           &kp D     &kp F       &kp G          &trans           &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL               &trans  &kp H      &kp J          &kp K                 &kp L                  &kp SEMICOLON     &kp SQT
+&kp LSHFT  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH  &kp DOLLAR  &kp PERCENT                                &kp HOME    &kp PG_UP                                  &kp GRAVE  &kp SQT        &kp RIGHT_BRACKET     &kp BACKSLASH          &kp LEFT_BRACKET  &kp RSHFT
+&trans     &kp GRAVE        &kp CAPS        &kp LEFT  &kp RIGHT                          &kp TAB  &kp DEL    &kp END     &kp PG_DN  &kp ESCAPE  &kp ESCAPE                     &kp LEFT       &kp DOWN              &kp UP_ARROW           &kp RIGHT         &trans
             >;
         };
 
@@ -206,3 +206,4 @@
         };
     };
 };
+
