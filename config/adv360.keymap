@@ -156,70 +156,70 @@
             label = "APP0";
         };
 
-        app1_wind: app_1 {
+        app1_wind: app_1_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F1))>;
             label = "APP_1_WIND";
         };
 
-        app2_wind: app_2 {
+        app2_wind: app_2_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F2))>;
             label = "APP_2_WIND";
         };
 
-        app3_wind: app_3 {
+        app3_wind: app_3_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F3))>;
             label = "APP_3_WIND";
         };
 
-        app4_wind: app4 {
+        app4_wind: app4_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F4))>;
             label = "APP4_WIND";
         };
 
-        app5_wind: app5 {
+        app5_wind: app5_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F5))>;
             label = "APP5_WIND";
         };
 
-        app6_wind: app6 {
+        app6_wind: app6_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F6))>;
             label = "APP6_WIND";
         };
 
-        app7_wind: app7 {
+        app7_wind: app7_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F7))>;
             label = "APP7_WIND";
         };
 
-        app8_wind: app8 {
+        app8_wind: app8_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F8))>;
             label = "APP8_WIND";
         };
 
-        app9_wind: app9 {
+        app9_wind: app9_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F9))>;
             label = "APP9_WIND";
         };
 
-        app10_wind: app0 {
+        app10_wind: app0_wind {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LA(LG(F10))>;
