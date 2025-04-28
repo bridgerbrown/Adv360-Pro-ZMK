@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     behaviors {
@@ -156,6 +155,76 @@
             bindings = <&kp LA(F10)>;
             label = "APP0";
         };
+
+        app1_wind: app_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F1))>;
+            label = "APP_1";
+        };
+
+        app2_wind: app_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F2))>;
+            label = "APP_2";
+        };
+
+        app3_wind: app_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F3))>;
+            label = "APP_3";
+        };
+
+        app4_wind: app4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F4))>;
+            label = "APP4";
+        };
+
+        app5_wind: app5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F5))>;
+            label = "APP5";
+        };
+
+        app6_wind: app6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F6))>;
+            label = "APP6";
+        };
+
+        app7_wind: app7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F7))>;
+            label = "APP7";
+        };
+
+        app8_wind: app8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F8))>;
+            label = "APP8";
+        };
+
+        app9_wind: app9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F9))>;
+            label = "APP9";
+        };
+
+        app10_wind: app0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(F10))>;
+            label = "APP0";
+        };
     };
 
     keymap {
@@ -164,22 +233,22 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&none       &kp N1     &kp N2       &kp N3          &kp N4          &kp N5  &none                                                                                          &none                 &kp N6  &kp N7           &kp N8               &kp N9            &kp N0           &none
-&kp TAB     &kp Q      &kp W        &kp E           &kp R           &kp T   &none                                                                                          &none                 &kp Y   &kp U            &kp I                &kp O             &kp P            &kp BSLH
-&kp ESCAPE  &lt 3 A    &lt 2 S      &lt 1 D         &kp F           &kp G   &cycle_app_instances             &kp LCTRL      &kp LALT    &kp LGUI   &kp RCTRL               &cycle_app_instances  &kp H   &kp J            &lt 1 K              &lt 2 L           &lt 3 SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z      &hm LCTRL X  &hm LEFT_ALT C  &hm LEFT_GUI V  &kp B                                                   &kp HOME    &kp PG_UP                                                &kp N   &hm RIGHT_GUI M  &hm RIGHT_ALT COMMA  &hm RCTRL PERIOD  &kp FSLH         &kp RSHFT
-&none       &kp GRAVE  &kp CAPS     &kp LEFT        &kp RIGHT                                     &kp SPACE  &kp BACKSPACE  &kp END     &kp PG_DN  &kp ESCAPE  &kp RETURN                                &kp LEFT_ARROW   &kp DOWN             &kp UP_ARROW      &kp RIGHT        &none
+&none       &kp N1     &kp N2          &kp N3              &kp N4          &kp N5  &none                                                                                          &none                 &kp N6  &kp N7           &kp N8                   &kp N9                &kp N0           &none
+&kp TAB     &kp Q      &kp W           &kp E               &kp R           &kp T   &none                                                                                          &none                 &kp Y   &kp U            &kp I                    &kp O                 &kp P            &kp LEFT_BRACKET
+&kp ESCAPE  &lt 3 A    &lt 2 S         &lt 1 D             &kp F           &kp G   &cycle_app_instances             &kp LCTRL      &kp LALT    &kp LGUI   &kp RCTRL               &cycle_app_instances  &kp H   &kp J            &lt 1 K                  &lt 2 L               &lt 3 SEMICOLON  &kp SQT
+&kp LSHFT   &kp Z      &hm LEFT_ALT X  &hm LEFT_CONTROL C  &hm LEFT_GUI V  &kp B                                                   &kp HOME    &kp PG_UP                                                &kp N   &hm RIGHT_GUI M  &hm RIGHT_CONTROL COMMA  &hm RIGHT_ALT PERIOD  &kp FSLH         &kp RSHFT
+&none       &kp GRAVE  &kp CAPS        &kp LEFT            &kp RIGHT                                     &kp SPACE  &kp BACKSPACE  &kp END     &kp PG_DN  &kp ESCAPE  &kp RETURN                                &kp LEFT_ARROW   &kp DOWN                 &kp UP_ARROW          &kp RIGHT        &none
             >;
         };
 
         Symbols {
             display-name = "Kp";
             bindings = <
-&trans     &kp N1           &kp N2          &kp N3    &kp N4      &kp N5         &trans                                                                     &trans  &kp N6     &kp N7         &kp N8                &kp N9                 &kp N0            &trans
-&kp TAB    &kp MINUS        &kp UNDERSCORE  &kp PLUS  &kp EQUAL   &kp LS(SLASH)  &trans                                                                     &trans  &kp CARET  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK      &kp SLASH
-&kp ESC    &kp A            &kp S           &kp D     &kp F       &kp G          &trans           &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL               &trans  &kp H      &kp J          &kp K                 &kp L                  &kp SEMICOLON     &kp SQT
-&kp LSHFT  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH  &kp DOLLAR  &kp PERCENT                                &kp HOME    &kp PG_UP                                  &kp GRAVE  &kp SQT        &kp RIGHT_BRACKET     &kp BACKSLASH          &kp LEFT_BRACKET  &kp RSHFT
-&trans     &kp GRAVE        &kp CAPS        &kp LEFT  &kp RIGHT                          &kp TAB  &kp DEL    &kp END     &kp PG_DN  &kp ESCAPE  &kp ESCAPE                     &kp LEFT       &kp DOWN              &kp UP_ARROW           &kp RIGHT         &trans
+&trans     &kp N1           &kp N2          &kp N3    &kp N4      &kp N5        &trans                                                                     &trans  &kp N6     &kp N7         &kp N8                &kp N9                 &kp N0            &trans
+&kp TAB    &kp MINUS        &kp UNDERSCORE  &kp PLUS  &kp EQUAL   &kp QUESTION  &trans                                                                     &trans  &kp CARET  &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK      &kp BSLH
+&kp ESC    &kp A            &kp S           &kp D     &kp F       &kp G         &trans           &kp LCTRL  &kp LALT    &kp LGUI   &kp RCTRL               &trans  &kp H      &kp J          &kp K                 &kp L                  &kp SEMICOLON     &kp SQT
+&kp LSHFT  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH  &kp DOLLAR  &kp PERCENT                               &kp HOME    &kp PG_UP                                  &kp GRAVE  &kp SQT        &kp RIGHT_BRACKET     &kp BACKSLASH          &kp LEFT_BRACKET  &kp RSHFT
+&trans     &kp GRAVE        &kp CAPS        &kp LEFT  &kp RIGHT                         &kp TAB  &kp DEL    &kp END     &kp PG_DN  &kp ESCAPE  &kp ESCAPE                     &kp LEFT       &kp DOWN              &kp UP_ARROW           &kp RIGHT         &trans
             >;
         };
 
@@ -197,13 +266,19 @@
         Function {
             display-name = "Mod";
             bindings = <
-&trans          &app1   &app2   &app3   &app4   &app5   &bootloader                                                                     &bootloader  &app6   &app7       &app8       &app9       &app10  &trans
-&trans          &trans  &trans  &trans  &trans  &trans  &none                                                                           &none        &trans  &trans      &trans      &trans      &trans  &trans
-&studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans               &trans  &trans    &bt BT_CLR  &trans                       &trans       &trans  &trans      &trans      &trans      &trans  &trans
-&trans          &trans  &trans  &trans  &trans  &trans                               &trans    &trans                                                &trans  &trans      &trans      &trans      &trans  &trans
-&trans          &trans  &trans  &trans  &trans                       &trans  &trans  &trans    &trans      &bl BL_TOG  &rgb_ug RGB_TOG                       &bl BL_INC  &bl BL_DEC  &bl BL_TOG  &trans  &trans
+&trans          &app1       &app2       &app3       &app4       &app5       &bootloader                                                        &bootloader  &app6       &app7       &app8       &app9       &app10       &trans
+&trans          &app1       &app2       &app3       &app4       &app5       &none                                                              &none        &app6       &app7       &app8       &app9       &app10       &trans
+&studio_unlock  &trans      &trans      &trans      &trans      &trans      &trans               &trans  &trans    &bt BT_CLR  &trans          &trans       &trans      &trans      &trans      &trans      &trans       &trans
+&trans          &app1_wind  &app2_wind  &app3_wind  &app4_wind  &app5_wind                               &trans    &trans                                   &app6_wind  &app7_wind  &app8_wind  &app9_wind  &app10_wind  &trans
+&trans          &trans      &trans      &trans      &trans                               &trans  &trans  &trans    &trans      &trans  &trans                           &bl BL_INC  &bl BL_DEC  &bl BL_TOG  &trans       &trans
             >;
         };
     };
 };
 
+#include <dt-bindings/zmk/stp.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
