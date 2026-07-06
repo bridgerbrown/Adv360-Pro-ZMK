@@ -278,13 +278,13 @@
 
 
 &mt {
-    tapping-term-ms = <230>;
-    quick-tap-ms = <175>;
+    tapping-term-ms = <260>;
+    quick-tap-ms = <205>;
     flavor = "tap-preferred";
 };
 
 &lt {
-    tapping-term-ms = <230>;
+    tapping-term-ms = <260>;
     flavor = "tap-preferred";
 };
 
