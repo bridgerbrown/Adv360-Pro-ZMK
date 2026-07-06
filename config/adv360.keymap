@@ -227,17 +227,6 @@
         };
     };
 
-    &mt {
-        tapping-term-ms = <230>;
-        quick-tap-ms = <175>;
-        flavor = "tap-preferred";
-    };
-
-    &lt {
-        tapping-term-ms = <230>;
-        flavor = "tap-preferred";
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -286,6 +275,19 @@
         };
     };
 };
+
+
+&mt {
+    tapping-term-ms = <230>;
+    quick-tap-ms = <175>;
+    flavor = "tap-preferred";
+};
+
+&lt {
+    tapping-term-ms = <230>;
+    flavor = "tap-preferred";
+};
+
 
 #include <dt-bindings/zmk/stp.h>
 #include <behaviors.dtsi>
